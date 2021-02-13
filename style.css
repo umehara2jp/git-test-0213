@@ -1,0 +1,76 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+html {
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Noto Serif JP', serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+main{
+	text-align: center;
+}
+
+.main_box {
+	width: 800px;
+	height: 900px;
+ 	display: inline-grid;
+ 	grid-template-columns: 200px 1fr;　/*1列目200px 1fr指定*/
+ 	grid-auto-rows: 30px;
+ 	grid-template-rows: 80px 1fr 30px ;
+ 	font-weight: bold;
+
+}
+
+.header{
+	background-color: #449977;
+	grid-column-start: 1;
+	grid-column-end: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu_box{
+	background-color: #995599;
+ 	grid-row-start: 2;
+ 	grid-row-end: 3;
+ 	padding-top: 30px;
+ 	text-align: center;
+
+}
+
+.menu_list{
+	display: inline-block;
+}
+
+.menu_list li{
+	width: 150px;
+	list-style-type: none;/*ポチ消す*/
+	margin-bottom: 5px;/*リストの行間*/
+}
+
+.menu_list li a{
+	display:block;
+	background-color: #FFF;
+}
+
+.menu_list li a:hover {
+    text-decoration: none;
+    background-color: #0f0;
+}
+
+.content_box{
+	background-color: #fff465;
+}
+
+.footer{
+	background-color: #006699;
+	grid-column-start: 1;
+	grid-column-end: 3;
+}
